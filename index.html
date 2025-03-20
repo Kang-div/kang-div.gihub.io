@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBD adek</title>
+  <style>
+    audio {
+      position: absolute;
+      bottom: 1px;
+    }
+  </style>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<style>
+  #kartu {
+    position: relative;
+    background-color: #fff2f9
+  }
+</style>
+<body style="background-image: url(https://images.unsplash.com/photo-1462823985959-022de68638a2?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);" class="flex justify-center h-screen items-center">
+  <audio controls autoplay loop>
+    <source src="Kolbi fimadinah.mp3" type="audio/mp3">
+  </audio>
+    
+  <div class="bg-white border px-10 py-8 border-4 border-gray-100 shadow-lg shadow-pink-300 rounded-xl text-center animate__animated animate__bounceInDown m-8 w-100" id="kartu" style="max-width: 500px;">
+    <div style="position: relative; height: 150px;">
+      <img src="https://i.pinimg.com/originals/7e/b2/12/7eb212dcc4f1f543126edb0b606dc56a.gif" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); width: 150px; height: 150px;">
+    </div>
+    <h1 class="text-4xl font-bold text-gray-800">Happy Birthday</h1>
+    <h1 class="text-5xl text-gray-700 font-bold">17</h1>
+    <h1 class="text-3xl text-pink-400 font-bold animate__animated animate__pulse animate__infinite">Dhiva Sofia Nabila</h1>
+    <button class="p-2 bg-pink-400 text-white rounded mt-5 hover:bg-pink-500 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahkartu()">for you🥰my love</button>
+    <h1>press play for your music</h1>
+    <h1>⬇️</h1>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  <script>
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: {
+        y: 0.6
+      },
+    });
+    let kartu = document.getElementById("kartu");
+    function ubahkartu() {
+      kartu.innerHTML = `
+        <img src="https://i.pinimg.com/originals/5b/cf/e5/5bcfe594edcb2c63195e8a98efdb911a.gif" style="width: 100px; height: 150x; margin-bottom: 10px;  margin-left: 50%; transform: translateX(-50%);">
+        <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">"Assalamu'alaikum Adek" Hari ini adalah hari yang spesial, karena hari ini adalah ulang tahunmu yang ke-17. gak nyangka ya sudah remaja ajah niyee. Mas ingin mengucapkan selamat ulang tahun kepada adek, dan mas berharap bahwa tahun ini akan menjadi tahun yang lebih baik dan lebih berkah bagi adekJujur mas bener" kagum sama adek, adek mampu menata ahlak dengan baik, adek sangat patuh dengan orang tua,
+        dan adek selalu bersungguh-sungguh dalam memperbaiki diri.Mas juga sangat kagum dengan ketakutan adek yang amat luar biasa kepada Allah.SWT🫂 ,
+        dan mas berharap bahwa mas juga dapat memiliki ketakutan yang sama seperti adek🤲🏻..</h1>
+        <button class="p-2 bg-pink-400 text-white rounded mt-5 hover:bg-pink-500 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahkartu2()">
+        Lanjutkan...</button>
+        `;
+      }
+    function ubahkartu2() {
+      kartu.innerHTML = `
+    <img src="https://i.pinimg.com/originals/95/43/05/9543058dfbdf1d1b936a5df2c289347d.gif" style="width: 90px; height: 130x; margin-bottom: 10px; margin-left: 50%; transform: translateX(-50%);"> 
+    <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">Mas selalu merasa bahagia dan nyaman ketika bersama adek🙊. mas suka sekali ketika kita saling bertukar cerita, pembahasan tentang memperbaiki diri dan memacu semangat untuk mendapatkan rahmat dari Allah.SWT . Doa mas untuk adek, yaitu agar adek diberi kesehatan, di mudah kan dalam belajar di pesantren, dimanapun adek menuntut ilmu💪🏻. dan smoga slalu di beri perlindungan Allah.SWT kapan pun dan dimanapun🤲🏻.  Pesan mas jaga pola makan, istirahat yng cukup dan menjaga hatimu untuk kesatuan ini.  mas berharap smoga Allah.SWT slalu menyatukan kita dan menjaga kita dalam kesatuan ini slamanya."</h1>
+    <button class="p-2 bg-pink-400 text-white rounded mt-5 hover:bg-pink-500 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahkartu3()">Lanjutkan...</button>
+
+      `;
+    }
+
+    function ubahkartu3() {
+      kartu.innerHTML = `
+    <img src="https://media1.tenor.com/images/42a5caa1129d7c9bc8a592b1d00a2fe4/tenor.gif" style="width: 90px; height: 130x; margin-bottom: 10px; margin-left: 50%; transform: translateX(-50%);"> 
+    <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">Jika mas ada salah, dan itu pasti ada sih, mas mohon maaf sebesar"nya mas sebagai orang yang sudah berani mengagumi,dan menyayangi adek sejauh ini,  mas akan slalu berusaha yang terbaik untuk adek🤲🏻.  Jujur sebenarnya mas blom terlalu bisa membuatsurat ini, tapi karna mas berusaha yang terbaik untuk adek,  allhamdulilah allah memampukan mas🥰 .  Terakhir, mas ingin mengucapkan skali lagi ,selamat ulang tahun ya Adek🫂🥳🥳.  mas berharap bahwa hari ini akan menjadi hari yang bahagia dan berkah bagi adek.
+    Wa'sallamualaikum wr, wb  Adekku yang cantik dan baik hati🤍. mas harap adek tidak marah ketika mas bilang bahwa adek memiliki wajah yang imut dan lucu. 🙈🙈🙈🫣Hehehe.""</h1>
+    <button class="p-2 bg-pink-400 text-white rounded mt-5 hover:bg-pink-500 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahkartu4()">Lanjutkan...</button>
+
+      `;
+    }
+  
+    function ubahkartu4() {
+   kartu.innerHTML = `
+    <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">LOVE YOU, ADEK!</h1>
+    <p>Semoga hari ulang tahunmu menjadi hari yang paling bahagia dan spesial.</p>
+    <p>Terima kasih telah menjadi bagian dari hidupku.</p>
+    <p>Love you, adek!</p>
+    <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/gemoy/sticker_24.gif" style="width: 160px; height: 160px; margin-bottom: 10px; margin-left: 50%; transform: translateX(-50%);">
+
+    <button class="p-2 bg-pink-400 text-white rounded mt-5 hover:bg-pink-500 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="window.location.reload()">Kembali</button>
+  `;
+}
+
+
+   </script>
+  </body>
+</html>
